@@ -28,7 +28,7 @@ else{
    {
      data2=await db.playlist.find({_id:data.parent_user})
      console.log(data2,"data2")
-    updtae2=await db.playlist.updateOne({referral_bonus:data2[0].referral_bonus+referral_bonus2})
+    update2=await db.playlist.updateOne({referral_bonus:data2[0].referral_bonus+referral_bonus2})
      console.log(data2)
    }
   update=await db.playlist.updateOne({referral_bonus:data[0].referral_bonus+referral_bonus})
